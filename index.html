@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hisham C | Cloud & DevOps Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+}
+
+nav h1 {
+    font-size: 22px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    background: linear-gradient(to right, #38bdf8, #6366f1);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* SECTION */
+section {
+    padding: 60px 10%;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* SKILLS GRID */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h1>Hisham C</h1>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h2>Hello, I'm Hisham</h2>
+        <p>Linux Administrator | AWS | DevOps Enthusiast</p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am a Junior Linux System Administrator with hands-on experience in RHEL, AWS, and Docker.
+            I specialize in building secure, scalable, and reliable infrastructure systems.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="card">Linux (RHEL / Ubuntu)</div>
+        <div class="card">AWS Cloud</div>
+        <div class="card">Docker</div>
+        <div class="card">Networking</div>
+        <div class="card">Server Management</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        <p>
+            Developed a full-stack application using React and Django with booking management,
+            service reviews, and predictive analytics.
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: your-email@example.com</p>
+        <p>Phone: +91 XXXXX XXXXX</p>
+        <a href="#" class="btn">Download Resume</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Hisham C | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
